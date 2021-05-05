@@ -1,73 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This will show on google result page as description ">
-    <title>Alisa</title>
+    <title>Alisas webpage</title>
+    <!-- CSS - start -->
+    <link rel="stylesheet" href="css1/style.css">
+    <style type="text/css">
+        header {
+            background-color: aquamarine;
+        }
+    </style>
+    <!-- CSS - end -->
+<!-- Google Fonts Welcome to my code -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/bff7ea3e36.js" crossorigin=“anonymous”></script>
+
+
 </head>
+
 <body>
     <!--header - start -->
-   <HEADER style="border: 1px solid red"> 
-    logo
-    the menu goes here
-   </HEADER>
-<!--header - end -->
+    <header style="border: 1px solid red">
+        <img src="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg" class="logo-header">
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Contact</a>
+        </header>
+    <!--header - end -->
 
-<!--hero - start -->
-     <div style="border: 1px solid yellow"> 
-         <h1>heading 1</h1>
-         <p>paragraph</p>
-         <button>this is the CTA</button>
-         
-     </div>  
+    <!--hero - start -->
+    <section id="hero">
+        <h1>heading 1</h1>
+        <p>paragraph</p>
+        <button>this is the CTA</button>
 
-   <!--hero - end -->
+    </section>
 
-   <!--blog articles- start -->
-<div>
-    <article>article 1</article> 
-    <article>article 2</article> 
-    <article>article 3</article> 
-    
-</div>
-<!--blog articles- end -->
+    <!--hero - end -->
 
-<!--features - start -->
-<div>
-   feature 1
-   feature 2
-   feature 3
-   feature 4
-</div>
-<!--features - end -->
+    <!--blog articles- start -->
+    <section>
+        <article class="home-article">
+            <img src="css1/img/jon-tyson-pEGyLHAPfVw-unsplash.jpg" ; class="img-article">
+            
+            <h3>Title - Article 1</h3>
+            <p>description</p>
+            <div>
+                <img src="css1/img/avatar_01.png" alt="Photo of Author Juno">
+                <p>Author name</p>
+            </div>
+        </article>
 
-<!--contact - start -->
-<div> 
-   contact (title - heading 3)
-   form name
-   form email
-   form message
+        <article class="home-article">
+            <img src="css1/img/najib-kalil-ys0rBJK-k6Q-unsplash.jpg" ; class="img-article">
+            <h3>Title - Article 2</h3>
+            <p>description</p>
+            <div>
+                <img src="css1/img/avatar_02.png" alt="Photo of Author Juno">
+                <p>Author name</p>
+            </div>
+        </article>
+        
+        <article class="home-article">
+            <img src="css1/img/nathan-dumlao-7tcXsqyhpWc-unsplash.jpg"; class="img-article">
+            <h3>Title - Article 3</h3>
+            <p>description</p>
+            <div>
+                <img src="css1/img/avatar_03.png" alt="Photo of Author Juno">
+                <p>Author name</p>
+            </div>
+        </article>
 
-</div>
-<!--contact- end -->
+    </section>
+    <!--blog articles- end -->
 
-<!--footer - start -->
-<footer> 
-   about
-   features 
-   contact us 
+    <!--features - start -->
+    <section>
+        <!--feature 1 - start -->
+        <div>
+            <span class="icon-feature">
+            <i class="fas fa-coffee"></i>>
+        </span>
+        <div>
+                <h4>Coffee & more</h4>
+                <p>feat description</p>
+            </div>
+        </div>
+        <!--feature 1 - end -->
 
-   social media
-   instagram
-   facebook
-   twitter
-</footer>
-<!--footer - end -->
+        <!--feature 2 - start -->
+        <div>
+            <span class="icon-feature">
+            <i class="fas fa-coffee-pot"></i>
+        </span>
+        <div>
+                <h4>Coffee pot</h4>
+                <p>feat description</p>
+            </div>
+        </div>
+        <!--feature 2 - end -->
+
+        <!--feature 3 - start -->
+        <div>
+            <span class="icon-feature">
+            <i class="fas fa-air-freshener"></i>
+            </span>
+            <div>
+                <h4>Fresh & tasty</h4>
+                <p>feat description</p>
+            </div>
+        </div>
+        <!--feature 3 - end -->
+
+        <!--feature 4 - start -->
+        <div>
+            <span class="icon-feature">
+            <i class="fas fa-cookie-bite"></i>
+        </span>
+        <div>
+                <h4>Cookies & Sweets</h4>
+                <p>feat description</p>
+            </div>
+        </div>
+        <!--feature 4 - end -->
+
+    </section>
+    <!--features - end -->
+
+    <!--contact - start -->
+    <section>
+        <h3>contact (title - heading 3)</h3>
+        <div>
+            <form action="#">
+                <input type="text">form name<br><br>
+                <input type="email"> email<br><br>
+                <textarea rows="5" cols="50">Write your message here</textarea><br><br>
+
+                <input type="submit" value="Send message">
+            </form>
+        </div>
+    </section>
+    <!--contact- end -->
+
+    <!--footer - start -->
+    <footer>
+        <div>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="mailto:alisa@alisa.de">Email</a>
+            <a href="tel:+491605771162">Phone</a>
+        </div>
+
+        <div>
+            <h5>follow us</h5>
+            <a href="www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="www.facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="www.twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+
+    </footer>
+    <!--footer - end -->
 
 
 
-   
+
 </body>
+
 </html>
