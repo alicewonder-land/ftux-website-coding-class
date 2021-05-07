@@ -27,34 +27,35 @@
 
 <body>
     <!--header - start -->
-    <header style="border: 1px solid red">
+    <header class="container">
         <img src="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg" class="logo-header">
         <nav>
-            <a href="#">About</a>
-            <a href="#">Features</a>
-            <a href="#">Contact</a>
+            <a href="#" class="menu">About</a>
+            <a href="#features" class="menu">Features</a>
+            <a href="#contact" class="menu">Contact</a>
+            <a href="docs/Alisa-CV.pdf" class="button-link">Download CV</a>
         </header>
     <!--header - end -->
 
     <!--hero - start -->
-    <section id="hero">
-        <h1>heading 1</h1>
-        <p>paragraph</p>
-        <button>this is the CTA</button>
+    <section id="hero" class="container">
+        <h1>Heading 1</h1>
+        <p>Paragraph</p>
+        <button>This is the CTA</button>
 
     </section>
 
     <!--hero - end -->
 
     <!--blog articles- start -->
-    <section>
+    <section id="articles" class="container">
         <article class="home-article">
             <img src="css1/img/jon-tyson-pEGyLHAPfVw-unsplash.jpg" ; class="img-article">
             
             <h3>Title - Article 1</h3>
             <p>description</p>
-            <div>
-                <img src="css1/img/avatar_01.png" alt="Photo of Author Juno">
+            <div class="container author-container"> <!-- the space between "container" and "author-container" is seperating the two in here, but its kind of an exception here-->
+                <img src="css1/img/avatar_01.png" alt="Photo of Author Juno" class="author-image"> 
                 <p>Author name</p>
             </div>
         </article>
@@ -63,8 +64,8 @@
             <img src="css1/img/najib-kalil-ys0rBJK-k6Q-unsplash.jpg" ; class="img-article">
             <h3>Title - Article 2</h3>
             <p>description</p>
-            <div>
-                <img src="css1/img/avatar_02.png" alt="Photo of Author Juno">
+            <div class="container author-container">
+                <img src="css1/img/avatar_02.png" alt="Photo of Author Juno" class="author-image">
                 <p>Author name</p>
             </div>
         </article>
@@ -73,8 +74,8 @@
             <img src="css1/img/nathan-dumlao-7tcXsqyhpWc-unsplash.jpg"; class="img-article">
             <h3>Title - Article 3</h3>
             <p>description</p>
-            <div>
-                <img src="css1/img/avatar_03.png" alt="Photo of Author Juno">
+            <div class="container author-container">
+                <img src="css1/img/avatar_03.png" alt="Photo of Author Juno" class="author-image">
                 <p>Author name</p>
             </div>
         </article>
@@ -83,11 +84,11 @@
     <!--blog articles- end -->
 
     <!--features - start -->
-    <section>
+    <section id="features" class="container">
         <!--feature 1 - start -->
-        <div>
+        <div class="container feature-card">
             <span class="icon-feature">
-            <i class="fas fa-coffee"></i>>
+            <i class="fas fa-coffee"></i>
         </span>
         <div>
                 <h4>Coffee & more</h4>
@@ -97,7 +98,7 @@
         <!--feature 1 - end -->
 
         <!--feature 2 - start -->
-        <div>
+        <div class="container feature-card">
             <span class="icon-feature">
             <i class="fas fa-coffee-pot"></i>
         </span>
@@ -109,7 +110,7 @@
         <!--feature 2 - end -->
 
         <!--feature 3 - start -->
-        <div>
+        <div class="container feature-card">
             <span class="icon-feature">
             <i class="fas fa-air-freshener"></i>
             </span>
@@ -121,7 +122,7 @@
         <!--feature 3 - end -->
 
         <!--feature 4 - start -->
-        <div>
+        <div class="container feature-card">
             <span class="icon-feature">
             <i class="fas fa-cookie-bite"></i>
         </span>
@@ -136,34 +137,68 @@
     <!--features - end -->
 
     <!--contact - start -->
-    <section>
-        <h3>contact (title - heading 3)</h3>
-        <div>
+    <section id="contact" class="container">
+        <div class="contact-30">
+            <h3>Contact</h3>
+        </div>
+       
+        <div class="contact-70">
             <form action="#">
-                <input type="text">form name<br><br>
-                <input type="email"> email<br><br>
-                <textarea rows="5" cols="50">Write your message here</textarea><br><br>
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="John Snow"
+               
+                ><br><br>
+               
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="johnsnow@gmail.com">
+                
+                <br><br>
+
+                <label for="message">Write your message</label><br>
+                <textarea id="message" rows="5" cols="50" placeholder="Here is the placeholder"></textarea>
+                
+                <br><br>
+
+                <input type="checkbox" id="terms" checked>
+                <label for="terms">I accept all the terms and I will not complain</label>
+
+                <br><br>
 
                 <input type="submit" value="Send message">
+
+                <br><br>
+
+              <!-- Shift+Alt+A short cut to comment multiple lines
+                <input type="date">
+
+                <br><br>
+
+                <input type="password">
+
+                <br><br>
+
+                <input type="file">  -->
+                
+
             </form>
         </div>
     </section>
     <!--contact- end -->
 
     <!--footer - start -->
-    <footer>
+    <footer class="container">
         <div>
-            <a href="#">About</a>
-            <a href="#">Features</a>
-            <a href="mailto:alisa@alisa.de">Email</a>
+            <a href="#">About</a><br>
+            <a href="#">Features</a><br>
+            <a href="mailto:alisa@alisa.de">Email</a><br>
             <a href="tel:+491605771162">Phone</a>
         </div>
 
         <div>
-            <h5>follow us</h5>
-            <a href="www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
-            <a href="www.facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
-            <a href="www.twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+            <h5>Follow us</h5>
+            <a href="www.instagram.com" target="_blank"><span class="icon-social"></span><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="www.facebook.com" target="_blank"><span class="icon-social"></span><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="www.twitter.com" target="_blank"><span class="icon-social"></span><i class="fab fa-twitter fa-2x"></i></a>
         </div>
 
     </footer>
