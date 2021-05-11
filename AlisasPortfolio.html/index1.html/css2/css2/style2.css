@@ -15,6 +15,7 @@ h1{
     font-size: 6rem;
     color: white;
     margin-block: 0.2em;
+    text-shadow: 2px 2px black
 }
 
 h2{
@@ -22,6 +23,11 @@ h2{
 }
 h3{
     font-size: 1.5rem;
+    color: red
+}
+
+.title{
+    font-size: 2rem;
     color: white
 }
 
@@ -50,14 +56,25 @@ p{
 
 
 header{
-    padding: 30x;
+    /*padding: 30px;*/
     justify-content: space-between;
     align-items: center;
 
 }
 
+.logo-header{
+    height: 100px; 
+    width: 100px
+}
+
+.myfooter a{
+    margin-top: 1rem;
+    text-decoration: none;
+
+}
+
 footer{
-    height:150px;
+    /*height:150px;*/
     background-color: #272731;
     justify-content: space-between;
     padding: 30px 60px;
@@ -114,7 +131,7 @@ a.button-link:hover{
 .home-projects {
     /*border: 10px solid whitesmoke;*/
    border-radius: 16px;
-   background-color: whitesmoke;
+   /*background-color: whitesmoke;*/
     width: 200px;
     padding: 20px;
     margin: 20px;
@@ -124,6 +141,7 @@ a.button-link:hover{
 
 .img-projects{
     width: 100%;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .icon-feature{
