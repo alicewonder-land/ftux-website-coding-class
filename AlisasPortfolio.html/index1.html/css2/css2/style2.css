@@ -23,7 +23,7 @@ h2{
 }
 h3{
     font-size: 1.5rem;
-    color: red
+    color: #036A75;
 }
 
 .title{
@@ -140,7 +140,7 @@ a.button-link:hover{
 
 
 .img-projects{
-    width: 100%;
+    width: 100%; height: 120px;
     border-radius: 5px 5px 0px 0px;
 }
 
